@@ -251,12 +251,16 @@ class CIIGraphByDate extends Component {
   };
 
   render() {
+    const { maxAttainedCII } = this.state;
     return (
       <>
         <div className="container-fluid text-light">
           <div className="row mt32">
-            <div className=" col-md-12">
-              <ResponsiveContainer width="100%" height={200}>
+            <div
+              className="cii-date-graph col-md-12"
+              style={{ height: 200, overflow: "auto" }}
+            >
+              <ResponsiveContainer width="100%" height={300}>
                 <ComposedChart
                   width={1150}
                   height={260}

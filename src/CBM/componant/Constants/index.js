@@ -310,6 +310,7 @@ export const pathScreenMapping = {
     "ReportPage":"ReportPage",
     "DigitalAlarmHome": "DigitalAlarmHome",
     "EEOI": "EEOI",
+    "CII":"CII",
     "Navigation": "Navigation",
     "Alarm": "Alarm",
     "All": "All",
@@ -334,6 +335,7 @@ export const screenArr = [
     { value: 'SparIndusME', label: 'SparIndusME' },
     { value: 'Alarm', label: 'Alarm' },
     { value: 'EEOI', label: 'EEOI' },
+    { value: 'CII', label: 'CII' },
     { value: 'Navigation', label: 'Navigation'},
     { value: 'Ships', label: 'Ships' }
 ];

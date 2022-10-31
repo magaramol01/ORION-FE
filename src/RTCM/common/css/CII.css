@@ -118,3 +118,12 @@ font-size: 35px;
    
     padding-left: 2em;
   }
+
+  .cii-date-graph::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  .cii-date-graph::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+  }

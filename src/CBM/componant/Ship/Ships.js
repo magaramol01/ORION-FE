@@ -552,7 +552,7 @@ class Ships extends Component {
     console.log(isFormFilled, payload)
 
     if (!isFormFilled) return;
-
+    this.setState({loading: true});
     updateShipById(payload).then((r) => {
       if (r === 2) {
         this.showAlert({
@@ -572,6 +572,7 @@ class Ships extends Component {
           message: "No Records Updated!",
         });
       }
+      this.setState({ loading: false });
     });
     this.setState({ loading: false });
   };
@@ -1347,6 +1348,7 @@ class Ships extends Component {
                         className="parameter-add-button ml-0"
                         variant="outline-secondary"
                         onClick={this.onSubmitRegisterShip}
+                        disabled={this.state.loading}
                       >
                         Register
                       </Button>
@@ -1358,6 +1360,7 @@ class Ships extends Component {
                         variant="outline-secondary"
                         data-fid={ShipUpdate.id}
                         onClick={this.onSubmitUpdateShip}
+                        disabled={this.state.loading}
                         >
                         Update
                       </Button>
