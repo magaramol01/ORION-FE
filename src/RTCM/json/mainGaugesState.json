@@ -1,0 +1,579 @@
+{
+    "05cbcf02-9b51-4fb5-9b2c-a95ab3c1e025": {
+        "layout": {
+            "i": "05cbcf02-9b51-4fb5-9b2c-a95ab3c1e025",
+            "x": 0,
+            "y": 0,
+            "h": 22.8,
+            "w": 9,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Main Gauges",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+                    "noOfCylinders": 8
+                }
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-8",
+            "src": "https://img.mobiscroll.com/demos/f2.png",
+            "name": "Gauge Cylinder",
+            "type": "gauge_cylinder",
+            "defaults": {
+                "h": 20.8,
+                "w": 10.35
+            }
+        }
+    },
+
+    "Panel-VT1B6mkNYEOUzMJm2Ov9HA": {
+        "layout": {
+            "i": "Panel-VT1B6mkNYEOUzMJm2Ov9HA",
+            "x": 9,
+            "y": 0,
+            "h": 55.2,
+            "w": 3,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Alerting",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+                    "height": "526"
+                },
+                "observantType": "alarm",
+                "observantColor": "red"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-21",
+            "src": "https://img.mobiscroll.com/demos/f1.png",
+            "name": "Observant",
+            "type": "observant",
+            "defaults": {
+                "h": 16.5,
+                "w": 1.5
+            }
+        }
+    },
+
+    "745f53d8-34e8-4c25-8b13-3f782fddfbd1": {
+        "layout": {
+            "i": "745f53d8-34e8-4c25-8b13-3f782fddfbd1",
+            "x": 0,
+            "y": 21.5,
+            "h": 33.6,
+            "w": 9,
+            "minW": 3,
+            "minH": 16.7,
+            "maxW": 12,
+            "maxH": 4,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "List",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+                    "isTransparent": false
+                },
+                "data": [
+                    {
+                        "value": 0,
+                        "outOfValue": 18,
+                        "limitValue": 15,
+                        "unit": "bar",
+                        "headerText": "ME FO in Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 200,
+                        "limitValue": 150,
+                        "unit": "°C",
+                        "headerText": "ME FO in Temp",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 18,
+                        "limitValue": 15,
+                        "unit": "bar",
+                        "headerText": "ME LO in Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 200,
+                        "limitValue": 150,
+                        "unit": "°C",
+                        "headerText": "ME LO in Temp",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 200,
+                        "limitValue": 150,
+                        "unit": "bar",
+                        "headerText": "ME Cyl. LO in Temp.",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 200,
+                        "limitValue": 150,
+                        "unit": "°C",
+                        "headerText": "ME T/C LO in Temp.",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 6,
+                        "limitValue": 4,
+                        "unit": "bar",
+                        "headerText": "JCFW in Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 6,
+                        "limitValue": 4,
+                        "unit": "bar",
+                        "headerText": "A/C CFW in Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 3,
+                        "limitValue": 2,
+                        "unit": "bar",
+                        "headerText": "JCW across cylinders diff. Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 3,
+                        "limitValue": 2,
+                        "unit": "bar",
+                        "headerText": "JCW across cylinders covers and exh. V/V",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 6,
+                        "limitValue": 4,
+                        "unit": "bar",
+                        "headerText": "Scav. air Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 40,
+                        "limitValue": 35,
+                        "unit": "bar",
+                        "headerText": "Starting air Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 10,
+                        "limitValue": 8,
+                        "unit": "bar",
+                        "headerText": "Exh. V/V spring air Press",
+                        "sparkBarData": {
+
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "outOfValue": 10,
+                        "limitValue": 8,
+                        "unit": "bar",
+                        "headerText": "Control iair inliet Press",
+                        "sparkBarData": {
+
+                        }
+                    }
+                ]
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-20",
+            "src": "https://img.mobiscroll.com/demos/f1.png",
+            "name": "Custom Bar Gauge List",
+            "type": "custom_bar_gauge_list",
+            "defaults": {
+                "h": 16.5,
+                "w": 1.5
+            }
+        }
+    },
+
+    "Panel-94xzAbPzFUC1dCZorzMfYQ": {
+        "layout": {
+            "i": "Panel-94xzAbPzFUC1dCZorzMfYQ",
+            "x": 0,
+            "y": 54,
+            "h": 14.4,
+            "w": 4,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "FO System",
+                "configuration": {
+                    "isShow": true,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "tableType": "fo_system"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-12",
+            "src": "https://img.mobiscroll.com/demos/m1.png",
+            "name": "System Table",
+            "type": "system_table",
+            "defaults": {
+                "h": 14.4,
+                "w": 3
+            }
+        }
+    },
+    "Panel-CWtsAlUdh0KjcBHCr65qrA": {
+        "layout": {
+            "i": "Panel-CWtsAlUdh0KjcBHCr65qrA",
+            "x": 4,
+            "y": 54,
+            "h": 14.4,
+            "w": 4,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "LO System",
+                "configuration": {
+                    "isShow": true,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "tableType": "lo_system"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-12",
+            "src": "https://img.mobiscroll.com/demos/m1.png",
+            "name": "System Table",
+            "type": "system_table",
+            "defaults": {
+                "h": 14.4,
+                "w": 3
+            }
+        }
+    },
+    "Panel-8uQLaBZg3kOT3sO5oFclZg": {
+        "layout": {
+            "i": "Panel-8uQLaBZg3kOT3sO5oFclZg",
+            "x": 8,
+            "y": 54,
+            "h": 14.4,
+            "w": 4,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Engine Control System",
+                "configuration": {
+                    "isShow": true,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "tableType": "engine_control_system"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-12",
+            "src": "https://img.mobiscroll.com/demos/m1.png",
+            "name": "System Table",
+            "type": "system_table",
+            "defaults": {
+                "h": 14.4,
+                "w": 3
+            }
+        }
+    },
+
+    "Panel-CNBretYXSkyRcBekmvvgUQ": {
+        "layout": {
+            "i": "Panel-CNBretYXSkyRcBekmvvgUQ",
+            "x": 0,
+            "y": 68.4,
+            "h": 14.4,
+            "w": 4,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "TC System",
+                "configuration": {
+                    "isShow": true,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "tableType": "tc_system"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-12",
+            "src": "https://img.mobiscroll.com/demos/m1.png",
+            "name": "System Table",
+            "type": "system_table",
+            "defaults": {
+                "h": 14.4,
+                "w": 3
+            }
+        }
+    },
+    "Panel-UZrLPBFI90eFjaeYFnqb2A": {
+        "layout": {
+            "i": "Panel-UZrLPBFI90eFjaeYFnqb2A",
+            "x": 4,
+            "y": 68.4,
+            "h": 14.4,
+            "w": 4,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "AUX Boiler",
+                "configuration": {
+                    "isShow": true,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "tableType": "aux_boiler"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-12",
+            "src": "https://img.mobiscroll.com/demos/m1.png",
+            "name": "System Table",
+            "type": "system_table",
+            "defaults": {
+                "h": 14.4,
+                "w": 3
+            }
+        }
+    },
+    "Panel-uFwUyircD0mKlX6XHra5tw": {
+        "layout": {
+            "i": "Panel-uFwUyircD0mKlX6XHra5tw",
+            "x": 8,
+            "y": 68.4,
+            "h": 14.4,
+            "w": 4,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43.7,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Aux System",
+                "configuration": {
+                    "isShow": true,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "tableType": "aux_system"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-12",
+            "src": "https://img.mobiscroll.com/demos/m1.png",
+            "name": "System Table",
+            "type": "system_table",
+            "defaults": {
+                "h": 14.4,
+                "w": 3
+            }
+        }
+    }
+}

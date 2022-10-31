@@ -1,0 +1,1323 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Simple reset*/
+* {
+	margin: 0; padding: 0;
+}
+
+body {
+	background: #81C4D1;
+}
+
+.compass {
+  position: relative;
+  margin: 0 auto;
+}
+
+.compass-inner {
+	width: 603px;
+    height: 594px;
+    background-image: url(../images/compass.png);
+	position: relative;
+	
+	top: 27.5px;
+	
+}
+
+.main-arrow {
+	height: 100%;
+	width: 30px;
+	left: 155px;
+	position: relative;
+	padding-top: 5px;
+	box-sizing:border-box;
+  transform: rotate(20deg);
+	/* animation: spin 2.0s alternate infinite; */
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	/* -o-animation: spin 2.0s alternate infinite; */
+	-moz-transform: rotate(20deg);
+	/* -moz-animation: spin 2.0s alternate infinite; */
+	-webkit-transform: rotate(20deg);
+	/* -webkit-animation: spin 2.0s alternate infinite; */
+	
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 165px solid #EF5052;
+	position: relative;
+}
+
+.arrow-down {
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	width: 0; 
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 165px solid #F3F3F3;
+	position: relative;
+}
+
+.north {
+	font-size: 36px;
+	font-family: 'Lobster Two', cursive;
+	color: #FFF;
+	position: absolute;
+	left: 155px;
+	top: 10px;
+}
+
+.east {
+	font-size: 36px;
+	font-family: 'Lobster Two', cursive;
+	color: #FFF;
+	position: absolute;
+	left: 290px;
+	top: 150px;
+}
+
+.west {
+	font-size: 36px;
+	font-family: 'Lobster Two', cursive;
+	color: #FFF;
+	position: absolute;
+	left: 20px;
+	top: 150px;
+}
+
+.south {
+	font-size: 36px;
+	font-family: 'Lobster Two', cursive;
+	color: #FFF;
+	position: absolute;
+	left: 155px;
+	top: 280px;
+}
+
+@keyframes spin {
+    0%{
+        transform:scale(1) rotate(0deg);
+    }
+	50% {
+		transform:scale(1) rotate(80deg);
+	}
+	100% {
+		transform:scale(1) rotate(-180deg);
+	}
+}
+
+@-o-keyframes spin {
+    0%{
+        -webkit-transform:scale(1) rotate(0deg);
+    }
+	50% {
+		-webkit-transform:scale(1) rotate(80deg);
+	}
+	100% {
+		-webkit-transform:scale(1) rotate(-180deg);
+	}
+}
+
+@-moz-keyframes spin {
+    0%{
+        -webkit-transform:scale(1) rotate(0deg);
+    }
+	50% {
+		-webkit-transform:scale(1) rotate(80deg);
+	}
+	100% {
+		-webkit-transform:scale(1) rotate(-180deg);
+	}
+}
+
+@-webkit-keyframes spin {
+    0%{
+        -webkit-transform:scale(1) rotate(0deg);
+    }
+	50% {
+		-webkit-transform:scale(1) rotate(80deg);
+	}
+	100% {
+		-webkit-transform:scale(1) rotate(-180deg);
+	}
+}
+
+@media (max-width: 600px) {
+  .compass {
+    width: 200px;
+	height: 200px;
+	text-align: center;
+  }
+  
+  .compass-inner {
+	  width: 170px;
+	  height: 170px;
+	  left: 13px;
+	  top: 13px;
+  }
+  
+  .main-arrow {
+	width: 30px;
+	left: 78px;
+	width: 15px;
+	padding-top: 3px;
+  }
+  
+  .arrow-up {
+	border-bottom: 82.5px solid #EF5052;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+   .arrow-down {
+	border-bottom: 82.5px solid #F3F3F3;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+  .north {
+	  left: 78px;
+	  top: 10px;
+	  font-size: 16px;
+  }
+  
+  .south {
+	  font-size: 16px;
+	  left: 78px;
+	  top: 140px;
+  }
+  
+  .east {
+	  font-size: 16px;
+	  top: 72.5px;
+	  left: 145px;
+  }
+  
+  .west {
+	  font-size: 16px;
+	  left: 10px;
+	  top: 72.5px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .compass {
+    width: 200px;
+	height: 200px;
+	text-align: center;
+  }
+  
+  .compass-inner {
+	  width: 170px;
+	  height: 170px;
+	  left: 13px;
+	  top: 13px;
+  }
+  
+  .main-arrow {
+	width: 30px;
+	left: 78px;
+	width: 15px;
+	padding-top: 3px;
+  }
+  
+  .arrow-up {
+	border-bottom: 82.5px solid #EF5052;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+   .arrow-down {
+	border-bottom: 82.5px solid #F3F3F3;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+  .north {
+	  left: 78px;
+	  top: 10px;
+	  font-size: 16px;
+  }
+  
+  .south {
+	  font-size: 16px;
+	  left: 78px;
+	  top: 140px;
+  }
+  
+  .east {
+	  font-size: 16px;
+	  top: 72.5px;
+	  left: 145px;
+  }
+  
+  .west {
+	  font-size: 16px;
+	  left: 10px;
+	  top: 72.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .compass {
+    width: 200px;
+	height: 200px;
+	text-align: center;
+  }
+  
+  .compass-inner {
+	  width: 170px;
+	  height: 170px;
+	  left: 13px;
+	  top: 13px;
+  }
+  
+  .main-arrow {
+	width: 30px;
+	left: 78px;
+	width: 15px;
+	padding-top: 3px;
+  }
+  
+  .arrow-up {
+	border-bottom: 82.5px solid #EF5052;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+   .arrow-down {
+	border-bottom: 82.5px solid #F3F3F3;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+  .north {
+	  left: 78px;
+	  top: 10px;
+	  font-size: 16px;
+  }
+  
+  .south {
+	  font-size: 16px;
+	  left: 78px;
+	  top: 140px;
+  }
+  
+  .east {
+	  font-size: 16px;
+	  top: 72.5px;
+	  left: 145px;
+  }
+  
+  .west {
+	  font-size: 16px;
+	  left: 10px;
+	  top: 72.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .compass {
+    width: 200px;
+	height: 200px;
+	text-align: center;
+  }
+  
+  .compass-inner {
+	  width: 170px;
+	  height: 170px;
+	  left: 13px;
+	  top: 13px;
+  }
+  
+  .main-arrow {
+	width: 30px;
+	left: 78px;
+	width: 15px;
+	padding-top: 3px;
+  }
+  
+  .arrow-up {
+	border-bottom: 82.5px solid #EF5052;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+   .arrow-down {
+	border-bottom: 82.5px solid #F3F3F3;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+  }
+  
+  .north {
+	  left: 78px;
+	  top: 10px;
+	  font-size: 16px;
+  }
+  
+  .south {
+	  font-size: 16px;
+	  left: 78px;
+	  top: 140px;
+  }
+  
+  .east {
+	  font-size: 16px;
+	  top: 72.5px;
+	  left: 145px;
+  }
+  
+  .west {
+	  font-size: 16px;
+	  left: 10px;
+	  top: 72.5px;
+  }
+}
+
+
+
+
+/* Task :start-Date-03-12-2021
+Task No-11
+Developer Name-Yogesh chavan */
+.arrowImg {
+    background-color: orange; /* defines the background color of the image */
+    mask: url(../images/compassArrow.svg) no-repeat center / contain;
+    -webkit-mask: url(../images/compassArrow.svg) no-repeat center / contain;
+  }
+  #frame {
+    position: relative;
+    width: 497px;
+    height: 500px;
+    background-image: url(../images/compass.png);
+    background-position: center;
+    background-size: cover; }
+  
+  #myImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto; 
+  }
+  .vessalLatLogDisplayBox{
+    height: 23px;
+    width: 109px;
+    position: absolute;
+    left: 52px;
+    top: 0px;
+    right: 0px;
+    bottom: 38px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    color: black;
+    text-align: start;
+    background-color: white;
+    text-align: center;
+    }
+    .sogstwDisplayBox{
+      height: 23px;
+    width: 109px;
+    position: absolute;
+    left: 52px;
+    top: 0px;
+    text-align: center;
+    right: 0px;
+      position: absolute;
+      left: 0px;
+      top: 44px;
+      right: 49px;
+      bottom: 0px;
+      display: block;
+      margin: auto;
+      border: 1px solid black;
+      color: black;
+      text-align: start;
+      background-color: white;
+      }
+  
+  .North-East{
+    top: 100px;
+    right: 88px;
+  }
+  .North-West{
+    top: 100px;
+    left: 88px;
+  }
+  .West-South{
+    bottom: 8px;
+    left: 88px;
+  }
+  .South-East{
+    bottom: 345px !important;
+    right: 16px;
+  }
+  .main-arrow {
+      height: 100%;
+      width: 30px;
+      left: 155px;
+      position: relative;
+      padding-top: 5px;
+      box-sizing:border-box;
+    transform: rotate(20deg);
+      /* animation: spin 2.0s alternate infinite; */
+      -ms-transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      /* -o-animation: spin 2.0s alternate infinite; */
+      -moz-transform: rotate(20deg);
+      /* -moz-animation: spin 2.0s alternate infinite; */
+      -webkit-transform: rotate(20deg);
+      /* -webkit-animation: spin 2.0s alternate infinite; */
+      
+  }
+  .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 165px solid #629b4b6e;
+      position: absolute;
+  }
+  .WindDirectiontriangle {
+    border-color: #629b4b6e #fff6ed05 #fff6ed05 #fff6ed05;
+    border-style: solid;
+    border-width: 130px 130px 130px 130px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 118px;
+    top: 118px;
+    display: block;
+    margin: auto;
+    transform: rotateZ( 
+45deg);
+}
+.VessalCourseDirectiontriangle {
+    border-color: #e79b376e #fff6ed05 #fff6ed05 #fff6ed05;
+    border-style: solid;
+    border-width: 130px 130px 130px 130px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 118px;
+    top: 118px;
+    display: block;
+    margin: auto;
+    transform: rotateZ( 
+45deg);
+}
+
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 136px solid transparent;
+    border-right: 132px solid transparent;
+    border-top: 136px solid #629b4b6e;
+    position: absolute;
+    left: 119px;
+    top: 16px;
+    right: 24px;
+    bottom: 114px;
+    display: block;
+    margin: auto;
+    transform: rotateZ( 
+  45deg);
+  }
+  .triangle-bottam {
+    width: 0;
+    height: 0;
+    border-left: 136px solid transparent;
+    border-right: 145px solid transparent;
+    border-top: 132px solid #e79b376e;
+    position: absolute;
+    left: 0px;
+    top: 183px;
+    right: 105px;
+    bottom: 106px;
+    display: block;
+    margin: auto;
+    transform: rotateZ( 
+  -136deg);
+  }
+  #currentDirectionArrow{
+    
+    position: absolute;
+    left: 12px;
+    top: 0px;
+    /* right: 0; */
+    bottom: 292px;
+    display: block;
+    margin: auto;
+    width: 40px;
+  }
+  #windDirectionArrow{
+  
+    position: absolute;
+    left: -32px;
+    top: 0px;
+    /* right: 0; */
+    bottom: 292px;
+    display: block;
+    margin: auto;
+    width: 40px;
+  }
+  
+  #arrow3{
+    transform: rotate( 
+  506.827deg);
+      position: absolute;
+      left: 0px;
+      top: 121px;
+      right: 284px;
+      bottom: 0;
+      display: block;
+      margin: auto;
+      width: 40px;
+  }
+  #arrow4{
+    transform: rotate( 
+      519.827deg);
+          position: absolute;
+          left: 0px;
+          top: 58px;
+          right: 316px;
+          bottom: 0;
+          display: block;
+          margin: auto;
+          width: 40px;
+  }
+  
+  #arrow5{
+    transform: rotate( 
+      505.827deg);
+          position: absolute;
+          left: 248px;
+          top: 6px;
+          right: 7px;
+          bottom: 149px;
+          display: block;
+          margin: auto;
+          width: 40px;
+  }
+  
+  #arrow6{
+    transform: rotate( 
+      450.827deg);
+          position: absolute;
+          left: 142px;
+          top: 48px;
+          right: 7px;
+          bottom: 273px;
+          display: block;
+          margin: auto;
+          width: 40px;
+  }
+  .VCD {
+    top:409px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #539953;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    right: 457px;
+  }
+  .VCD1 {
+    top: 337px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #539953;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    right: 477px;
+  }
+  .VHDOuter {
+    top: 405px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #b0f17b;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    left: 15px;
+  }
+  .VHDInner {
+  
+
+    height: 45px;
+    width: 45px;
+    background-color: #3287e0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    color: #fff;
+    font-size: 9px;
+    line-height: 15px;
+    margin: 10px 10px 10px 10px;
+  }
+  .SwellOuter {
+    top: 0px;
+    position: absolute;
+    height: 50px;
+    width: 116px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 354px;
+    border: 1px solid black;
+}
+  .SwellInner {
+    top: 4px;
+    position: absolute;
+    height: 41px;
+    width: 99px;
+    background-color: #7bd0f1;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    left: 362px;
+
+  }
+  .SwellInner p{
+    margin-bottom: 2px;
+    font-size: 12px !important;
+  }
+  .WaveOuter {
+    top: 0px;
+      position: absolute;
+      height: 50px;
+      width: 100px;
+      background-color: #fff;
+      text-align: center;
+      font-weight: bold;
+      left: 496px;
+      border: 1px solid black;
+  }
+  .WaveInner {
+    top: 5px;
+    position: absolute;
+    height: 40px;
+    width: 82px;
+    background-color: #89f17b;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    left: 505px;
+  }
+  .WaveInner p{
+    margin-bottom: 2px;
+    font-size: 12px !important;
+  }
+ 
+  .WindSpeed {
+    top: 371px;
+    position: absolute;
+    height: 43px;
+    width: 90px;
+    background-color: rgb(230, 213, 65);
+    text-align: center;
+    font-weight: bold;
+    left: 425px;
+    color: #28a745;
+    font-size: 12px;
+     
+  }
+  .WindSpeed p{
+      margin-bottom: 1px;
+  }
+  .CurrecntSpeedInner p{
+    margin-bottom: 2px;
+    font-size: 12px !important;
+    }
+  .CurrecntSpeedOuter {
+    top: 425px;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(235, 180, 118);
+    text-align: center;
+    font-weight: bold;
+    left: 433px;
+    color: #0f0e0e;
+    font-size: 12px;
+     
+  }
+  .CurrecntSpeedInner {
+    top: 429px;
+    position: absolute;
+    height: 41px;
+    width: 92px;
+    background-color: rgb(218, 23, 33);
+    text-align: center;
+    font-weight: bold;
+    left: 437px;
+    color: #28a745;
+    font-size: 9px;
+    line-height: 15px;
+  
+  }
+  .LatLongNSEW {
+    top: 255px;
+    position: absolute;
+    height: 30px;
+    width: 117px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 224px;
+    border: 1px solid black;
+    transform: rotate(
+  -19deg);
+  color: #0f0e0e;
+  }
+  .SOGSTW {
+    top: 316px;
+    position: absolute;
+    height: 30px;
+    width: 117px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 251px;
+    border: 1px solid black;
+    transform: rotate( 
+  -19deg);
+  color: #0f0e0e;
+  }
+  .deactiveRow{
+    background-color: red !important;
+  }
+  .deactiveRow:hover{
+    background-color: red !important;
+  }
+  #currentDirectionArrow,#windDirectionArrow{
+  transform: rotate(
+86deg)}
+.dot{
+    border: solid #e02222;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 15px;
+}
+/*------------------Current direction Arrow style-----------------------*/
+.iconCurrentDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+   /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowCurrentDirection {
+    position: absolute;
+    top: -47px;
+    width: 85%;
+    height: 8px;
+    background-color: red;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrowCurrentDirection::after, .arrowCurrentDirection::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    right: -8px;
+    background-color: red;
+}
+
+.arrowCurrentDirection::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrowCurrentDirection::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.currentDirectionArrow{
+   /* border:1px solid black;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:5s;
+    top: 147px;
+    left: 149px;
+}
+@-webkit-keyframes orbit {
+    from { -webkit-transform:rotate(0deg) }
+    to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+    from { -moz-transform:rotate(0deg) }
+    to { -moz-transform:rotate(360deg) }
+}
+  /* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Wind direction Arrow style-----------------------*/
+.iconWindDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowWindDirection {
+    position: absolute;
+    top: -47px;
+    width: 85%;
+    height: 8px;
+    background-color: rgb(230, 213, 65);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrowWindDirection::after, .arrowWindDirection::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    right: -8px;
+    background-color: rgb(230, 213, 65);
+}
+
+.arrowWindDirection::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrowWindDirection::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.WindArrow{
+    /* border:1px solid black;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:5s;
+    top: 147px;
+    left: 149px;
+}
+@-webkit-keyframes orbit {
+    from { -webkit-transform:rotate(0deg) }
+    to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+    from { -moz-transform:rotate(0deg) }
+    to { -moz-transform:rotate(360deg) }
+}
+/* ----------------End Task -----------------------------------------------------*/
+
+
+/*------------------Vessal Course direction Arrow style-----------------------*/
+.iconVCDirection {
+    position: absolute;
+    top: -34%;
+    left: 65%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            269deg);
+}
+
+.arrowVCDirection {
+    position: absolute;
+    top: -47px;
+    width: 85%;
+    height: 8px;
+    background-color: #2bcd15;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrowVCDirection::after, .arrowVCDirection::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    right: -8px;
+    background-color: #2bcd15;
+}
+
+.arrowVCDirection::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrowVCDirection::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.VessalCourseArrow{
+    /* border:1px solid black;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:5s;
+    top: 147px;
+    left: 149px;
+}
+@-webkit-keyframes orbit {
+    from { -webkit-transform:rotate(0deg) }
+    to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+    from { -moz-transform:rotate(0deg) }
+    to { -moz-transform:rotate(360deg) }
+}
+/* ----------------End Task -----------------------------------------------------*/
+
+
+/*------------------Vessal Heading direction Arrow style-----------------------*/
+.iconVHDirection {
+    position: absolute;
+    top: -34%;
+    left: 65%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            269deg);
+}
+
+.arrowVHDirection {
+    position: absolute;
+    top: -47px;
+    width: 85%;
+    height: 8px;
+    background-color: mediumblue;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrowVHDirection::after, .arrowVHDirection::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    right: -8px;
+    background-color: mediumblue;
+}
+
+.arrowVHDirection::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrowVHDirection::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.VessalHeadingCourseArrow{
+    /* border:1px solid black;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:5s;
+    top: 147px;
+    left: 149px;
+}
+@-webkit-keyframes orbit {
+    from { -webkit-transform:rotate(0deg) }
+    to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+    from { -moz-transform:rotate(0deg) }
+    to { -moz-transform:rotate(360deg) }
+}
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Wave direction Arrow style-----------------------*/
+.iconWaveDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowWaveDirection {
+    position: absolute;
+    top: -47px;
+    width: 85%;
+    height: 8px;
+    background-color: deepskyblue;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrowWaveDirection::after, .arrowWaveDirection::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    right: -8px;
+    background-color: deepskyblue;
+}
+
+.arrowWaveDirection::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrowWaveDirection::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.WaveArrow{
+    /* border:1px solid black;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:5s;
+    top: 147px;
+    left: 149px;
+}
+@-webkit-keyframes orbit {
+    from { -webkit-transform:rotate(0deg) }
+    to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+    from { -moz-transform:rotate(0deg) }
+    to { -moz-transform:rotate(360deg) }
+}
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Swell direction Arrow style-----------------------*/
+.iconSwellDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowSwellDirection {
+    position: absolute;
+    top: -47px;
+    width: 85%;
+    height: 8px;
+    background-color: palegreen;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrowSwellDirection::after, .arrowSwellDirection::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    right: -8px;
+    background-color: palegreen;
+}
+
+.arrowSwellDirection::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrowSwellDirection::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.SwellArrow{
+    /* border:1px solid black;*/
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+    -moz-animation-duration:5s;
+    top: 147px;
+    left: 149px;
+}
+@-webkit-keyframes orbit {
+    from { -webkit-transform:rotate(0deg) }
+    to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+    from { -moz-transform:rotate(0deg) }
+    to { -moz-transform:rotate(360deg) }
+}
+/* ----------------End Task -----------------------------------------------------*/
+/*-------------------------------------rectangle--------------------------------------*/
+.rectangleHeading{
+    font-size: 10px;
+    font-weight: 600;
+}
+.rectangleWind {
+    height: 70px;
+    width: 150px;
+    background-color: rgb(230, 213, 65);
+    color: black;
+    text-align: center;
+}
+.rectangleSpeed {
+    height: 70px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.rectangleInnerSpeed {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(238 ,194, 164);
+    color: black;
+    text-align: center;
+}
+.rectangleWave {
+    height:70px;
+    width: 150px;
+    background-color:  deepskyblue;
+    color: black;
+    text-align: center;
+}
+.rectangleVH {
+    height: 70px;
+    width: 150px;
+    background-color: mediumblue;
+    color: white;
+    text-align: center;
+}
+.rectangleVC {
+    height: 70px;
+    width: 150px;
+    background-color: #2bcd15;
+    color: black;
+    text-align: center;
+}
+.rectangleSwell {
+    height: 70px;
+    width: 150px;
+    background-color: palegreen;
+    color: black;
+    text-align: center;
+}
+
+.mt8{
+    margin-top: 8px;
+}
+/* ----------------End Task -----------------------------------------------------*/
+
+.arrowNew {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -66px 81px;
+    transform: rotate(
+            1deg);
+}
+
+.arrowNew:before,.arrowNew:after{
+     content:'';
+     border-color:transparent;
+     border-style:solid;
+     position: absolute;
+ }
+.arrow-downNew:before  {
+    border: none;
+    background-color: #e21111;
+    height: 50%;
+    width: 30%;
+    top: 0;
+    left: 35%;
+}
+.arrow-downNew:after {
+    left: 0;
+    top: 50%;
+    border-width: 20px 20px;
+    border-top-color: #de1919;
+}
+
+

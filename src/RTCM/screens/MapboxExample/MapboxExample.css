@@ -1,0 +1,46 @@
+.mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+.mapboxgl-popup-content {
+  padding: 5px 8px;
+  border: 2px solid rgb(179, 179, 179);
+  background-color: #ebebebbe;
+}
+
+.dropdown-menu.weather-dropdown {
+  background-color: #ebebebbe !important;
+  color: #000 !important;
+  border: 2px solid rgb(179, 179, 179) !important;
+}
+
+.dropdown-menu.weather-dropdown a {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.dropdown-menu.weather-dropdown a:hover,
+.dropdown-menu.weather-dropdown a.active {
+  color: #fff !important;
+}
+
+.mapboxgl-marker {
+  overflow: visible !important;
+  /* transform: scale(0.9) !important; */
+  width: 21px;
+}
+
+#courseLine {
+  position: absolute;
+  top: -5px;
+  left: -10px;
+}

@@ -1,0 +1,136 @@
+.custom-calendar-wrapper .react-calendar {
+    width: 350px;
+    max-width: 100%;
+    background: black;
+    border: 1px solid #a0a096;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.500em;
+}
+
+.custom-calendar-wrapper .react-calendar button{
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    line-height: 1.5;
+    color: #d8d9da;
+    padding: 1px 6px;
+}
+
+.custom-calendar-wrapper .react-calendar__tile {
+    flex-basis: 14.2857%;
+    max-width: 14.2857%;
+    overflow: hidden;
+}
+
+/*.react-calendar__month-view__days {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+
+/****unset default properties*/
+.custom-calendar-wrapper .react-calendar.smartship-react-calendar {
+    border: unset; /*todo*/
+    border: 1px solid #313131 !important;/*todo remove this*/
+}
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__navigation button:enabled:hover,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__navigation button:enabled:focus,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+    background-color: unset;
+}
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar button:enabled:hover,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar button:enabled:hover
+{
+    cursor: unset;
+}
+.custom-calendar-wrapper .react-calendar__month-view__weekdays__weekday {
+    padding: unset;
+}
+.custom-calendar-wrapper .react-calendar__navigation {
+    height: unset;
+    margin: unset;
+}
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__month-view__weekdays {
+    text-transform: unset;
+}
+
+.custom-calendar-wrapper .smartship-react-calendar button, input, select, textarea {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+}
+
+.custom-calendar-wrapper .react-calendar__navigation__arrow.react-calendar__navigation__next2-button,
+.custom-calendar-wrapper .react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+    display:none;
+}
+
+.custom-calendar-wrapper .react-calendar__navigation button {
+    height: 26px;
+}
+
+.custom-calendar-wrapper .smartship-react-calendar {
+    width: 268px;
+    background-color: rgb(22, 23, 25);
+}
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__tile,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__tile--now {
+    margin-bottom: 4px;
+    background-color: inherit;
+    height: 26px;
+}
+
+.custom-calendar-wrapper .react-calendar__tile--now {
+    background-color: rgb(31, 96, 196) !important;
+    display: block;
+    padding-top: 2px;
+    height: 26px;
+    border-radius: 100px;
+}
+
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__tile--rangeEnd abbr,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__tile--rangeStart abbr {
+    background-color: rgb(31, 96, 196);
+    display: block;
+    padding-top: 2px;
+    height: 26px;
+    border-radius: 100px;
+}
+
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__navigation__label,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__navigation__arrow,
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__navigation {
+    padding-top: 4px;
+    background-color: inherit;
+    color: rgb(216, 217, 218);
+    font-weight: 500;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__month-view__weekdays abbr {
+    cursor: default;
+    display: block;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    padding: 4px 0px;
+}
+.custom-calendar-wrapper .smartship-react-calendar .react-calendar__month-view__weekdays {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: inherit;
+    text-align: center;
+    color: rgb(31, 96, 196);
+}
+
+.alarm-calendar-wrapper .react-calendar__month-view__days__day--weekend {
+    color: black;
+}
+
+.alarm-calendar-wrapper .tooltip-arrow {
+    display: none !important;
+}

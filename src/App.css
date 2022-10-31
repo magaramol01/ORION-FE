@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.redbox {
+  background-color: red;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8e8e8e;
+  float: right;
+  margin-right: 7px;
+  margin-top: 3px;
+}
+
+.greenbox {
+  background-color: green;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8e8e8e;
+  float: right;
+  margin-right: 7px;
+  margin-top: 3px;
+}
+
+.whitebox {
+  /*background-color: white;*/
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8e8e8e;
+  float: right;
+  margin-right: 7px;
+  margin-top: 3px;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff !important;
+  background-color: #ea8847 !important;
+  border-color: #ea8847 !important;
+}
+#noonReport {
+  border-radius: 10px;
+  border-color:transparent !important;
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 88%; /* Full width (cover the whole page) */
+  height: 14%; /* Full height (cover the whole page) */
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+div.b {
+  word-wrap: break-word;
+}
+.mrvdiv{
+  width: 10px;
+}
+.ml8{
+  margin-left: 8px;
+}
+.ml6{
+  margin-left: 16px;
+}
+.ml35{
+  margin-left:35px;
+}
+.ml14{
+  margin-left: 8px;
+}
+.ml28{
+  margin-left: 28px;
+}
+.ml24{
+  margin-left: 15px;
+}
+.lh8{
+  line-height: 8px;
+}
+.vslNameSpace{
+  /* word-break: break-all;
+    white-space: initial; */
+    word-wrap: break-word;
+    white-space: normal;
+}
+.ml20{
+  margin-left: 20px;
+}
+.mrvDataHederRow{
+  color: rgb(183, 179, 179);
+    font-size: 9px;
+    line-height: 2px;
+    margin-top: 10px;
+}
+.mrvDataRow{
+  color: #fff;
+    font-size: 9px;
+    line-height: 16px;
+    margin-top: -9px;
+}
+/* --------------End-------------------- */
+
+
+
+
+
+
+

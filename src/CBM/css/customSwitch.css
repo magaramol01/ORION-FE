@@ -1,0 +1,67 @@
+/*-------------------------------------------*\
+customSwitch.css
+
+-A custom switch Checkbox
+  \*-------------------------------------------*/
+.customSwitchLabel:before, .customSwitchLabel:after {
+    content: '';
+    position: absolute;
+}
+.customSwitchInput {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.customSwitchToggle {
+    width: 40px;
+    background: #2e394d;
+    height: 16px;
+    border-radius: 50px;
+    position: relative;
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.customSwitchToggle:before {
+    display: block;
+    transition: all .2s ease;
+    top: 2px;
+    left: 2px;
+    border-radius: 2em;
+    border: 2px solid #88cf8f;
+    transition: .3s ease;
+}
+
+.customSwitch label {
+    background: #eceeef;
+    border: 0.5px solid rgba(117, 117, 117, 0.31);
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2), 0 -3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.customSwitch label:before {
+    border: none;
+    width: 10px;
+    height: 10px;
+    box-shadow: inset 0.5px -1px 1px rgba(0, 0, 0, 0.35);
+    background: #fff;
+    transform: rotate(-50deg);
+}
+
+.customSwitch label:after {
+    background: transparent;
+    border-radius: 30px;
+    z-index: 0;
+    right:-15px;
+    box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.2), 0px 1px 2px 0px rgba(151, 151, 151, 0.2);
+}
+
+.customSwitch:checked + label {
+    background: #f5891e;
+}
+
+.customSwitch:checked + label:before {
+    left: 70%;
+}

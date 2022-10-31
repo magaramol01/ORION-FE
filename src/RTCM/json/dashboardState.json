@@ -1,0 +1,271 @@
+{
+    "Panel-ThLTMPRd2UG5dGOYhIGjEQ": {
+        "layout": {
+            "i": "Panel-ThLTMPRd2UG5dGOYhIGjEQ",
+            "x": 0,
+            "y": 0,
+            "h": 80,
+            "w": 9,
+            "minW": 3,
+            "minH": 20,
+            "maxW": 12,
+            "maxH": 80,
+            "static": false,
+            "isDraggable": true,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Vessel Route Forecast",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719",
+                    "alignment": "center"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                },
+                "carouselData": {
+                    "vessel": {
+
+                    },
+                    "weather": {
+
+                    },
+                    "voyage": {
+
+                    },
+                    "navigation": {
+
+                    },
+                    "mainEngine": {
+                        "unit1": {
+                            "gaugeData": {
+                                "renderTo": "unit_1",
+                                "value": 5,
+                                "startAngle": 90,
+                                "ticksAngle": 180,
+                                "width": 140,
+                                "height": 130,
+                                "units": "bar",
+                                "valueBox": true,
+                                "minValue": 0,
+                                "maxValue": 500,
+                                "majorTicks": [0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500],
+                                "minorTicks": 2,
+                                "strokeTicks": true,
+                                "highlights": [],
+                                "colorMajorTicks": "#ddd",
+                                "colorMinorTicks": "#ddd",
+                                "colorTitle": "#eee",
+                                "colorUnits": "#ccc",
+                                "colorNumbers": "#eee",
+                                "colorPlate": "#222",
+                                "borderShadowWidth": 0,
+                                "borders": false,
+                                "needle": false,
+                                "needleType": "arrow",
+                                "needleWidth": 5,
+                                "needleCircleSize": 7,
+                                "needleCircleOuter": true,
+                                "needleCircleInner": false,
+                                "animationDuration": 1500,
+                                "animationRule": "linear",
+                                "colorValueBoxBackground": "#161719",
+                                "colorValueText":"#d8d9da",
+                                "fontValue": 50,
+                                "fontNumbersSize": 25,
+                                "fontUnitsSize": 40,
+                                "fontValueSize": 50,
+                                "colorBarProgress": "#EF843C",
+                                "colorBar": "#161719",
+                                "barWidth": 8
+                            },
+                            "tableData": {
+
+                            },
+                            "sparkBarData": {
+
+                            },
+                            "gasDeviation": "8%",
+                            "coolingFWOutletTemp": "80°C"
+                        }
+                    },
+                    "auxEngine": {
+
+                    },
+                    "auxiliaries": {
+
+                    }
+                }
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-22",
+            "src": "https://img.mobiscroll.com/demos/f1.png",
+            "name": "Dashboard Home 3 Carousel",
+            "type": "dash_home_3_carousel",
+            "defaults": {
+                "h": 16.5,
+                "w": 1.5
+            }
+        }
+    },
+
+    "Panel-TnRlSYpKy0i94M7NIf3C4A": {
+        "layout": {
+            "i": "Panel-TnRlSYpKy0i94M7NIf3C4A",
+            "x": 9,
+            "y": 0,
+            "h": 27.3,
+            "w": 3,
+            "minW": 3,
+            "minH": 0,
+            "maxW": 3,
+            "maxH": 27.3,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Alarms",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719",
+                    "alignment": "center"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+                    "height": "227"
+                },
+                "observantType": "alarm"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-21",
+            "src": "https://img.mobiscroll.com/demos/f1.png",
+            "name": "Observant",
+            "type": "observant",
+            "defaults": {
+                "h": 16.5,
+                "w": 1.5
+            }
+        }
+    },
+    "Panel-UL4qbGmpK0S0rXqi46fRdQ": {
+        "layout": {
+            "i": "Panel-UL4qbGmpK0S0rXqi46fRdQ",
+            "x": 9,
+            "y": 26,
+            "h": 27.3,
+            "w": 3,
+            "minW": 3,
+            "minH": 0,
+            "maxW": 3,
+            "maxH": 27.3,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Alerts",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719",
+                    "alignment": "center"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+                    "height": "227"
+                },
+                "observantType": "alert"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-21",
+            "src": "https://img.mobiscroll.com/demos/f1.png",
+            "name": "Observant",
+            "type": "observant",
+            "defaults": {
+                "h": 16.5,
+                "w": 1.5
+            }
+        }
+    },
+    "Panel-5rYEyDMA6USN1fEvk14aNw": {
+        "layout": {
+            "i": "Panel-5rYEyDMA6USN1fEvk14aNw",
+            "x": 9,
+            "y": 52,
+            "h": 27.3,
+            "w": 3,
+            "minW": 3,
+            "minH": 0,
+            "maxW": 3,
+            "maxH": 27.3,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Advisories",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719",
+                    "alignment": "center"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+                    "height": "227"
+                },
+                "observantType": "advisory"
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-21",
+            "src": "https://img.mobiscroll.com/demos/f1.png",
+            "name": "Observant",
+            "type": "observant",
+            "defaults": {
+                "h": 16.5,
+                "w": 1.5
+            }
+        }
+    }
+}

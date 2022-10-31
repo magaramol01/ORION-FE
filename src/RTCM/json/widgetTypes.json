@@ -1,0 +1,222 @@
+{
+    "accordion": {
+        "id": "W-1",
+        "src": "https://img.mobiscroll.com/demos/m3.png",
+        "name": "Accordion",
+        "type": "accordion",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "advisory": {
+        "id": "W-2",
+        "src": "https://img.mobiscroll.com/demos/f2.png",
+        "name": "Advisory",
+        "type": "advisory",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "alarm": {
+        "id": "W-3",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Alarm",
+        "type": "alarm",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "alert": {
+        "id": "W-4",
+        "src": "https://img.mobiscroll.com/demos/m2.png",
+        "name": "Alert",
+        "type": "alert",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "carousel": {
+        "id": "W-5",
+        "src": "https://img.mobiscroll.com/demos/f4.png",
+        "name": "Carousel",
+        "type": "carousel",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "gauge": {
+        "id": "W-6",
+        "src": "https://img.mobiscroll.com/demos/m1.png",
+        "name": "Gauge",
+        "type": "gauge",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "gauge_alert": {
+        "id": "W-7",
+        "src": "https://img.mobiscroll.com/demos/f3.png",
+        "name": "Gauge Alert",
+        "type": "gauge_alert",
+        "defaults": {
+            "h": 25,
+            "w": 3.5
+        }
+    },
+    "gauge_cylinder": {
+        "id": "W-8",
+        "src": "https://img.mobiscroll.com/demos/f2.png",
+        "name": "Gauge Cylinder",
+        "type": "gauge_cylinder",
+        "defaults": {
+            "h": 40.8,
+            "w": 10.35
+        }
+    },
+    "leaflet_map": {
+        "id": "W-9",
+        "src": "https://img.mobiscroll.com/demos/f3.png",
+        "name": "Windy-Leaflet Map",
+        "type": "leaflet_map",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "main_engine_cylinder": {
+        "id": "W-10",
+        "src": "https://img.mobiscroll.com/demos/f2.png",
+        "name": "Cylinder",
+        "type": "main_engine_cylinder",
+        "defaults": {
+            "h": 43.7,
+            "w": 10.82
+        }
+    },
+    "main_engine_table": {
+        "id": "W-11",
+        "src": "https://img.mobiscroll.com/demos/m1.png",
+        "name": "Main Engine Table",
+        "type": "main_engine_table",
+        "defaults": {
+            "h": 16.7,
+            "w": 3
+        }
+    },
+    "system_table": {
+        "id": "W-12",
+        "src": "https://img.mobiscroll.com/demos/m1.png",
+        "name": "System Table",
+        "type": "system_table",
+        "defaults": {
+            "h": 14.4,
+            "w": 3
+        }
+    },
+    "text_card": {
+        "id": "W-13",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Text Card",
+        "type": "text_card",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "vessel_information_accordion": {
+        "id": "W-14",
+        "src": "https://img.mobiscroll.com/demos/m1.png",
+        "name": "Vessel Information",
+        "type": "vessel_information_accordion",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "vessel_progress_bar": {
+        "id": "W-15",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Vessel Progress Bar",
+        "type": "vessel_progress_bar",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "custom_gauge": {
+        "id": "W-16",
+        "src": "https://img.mobiscroll.com/demos/m1.png",
+        "name": "Custom Gauge",
+        "type": "custom_gauge",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "dash_home_3_carousel": {
+        "id": "W-22",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Dashboard Home 3 Carousel",
+        "type": "dash_home_3_carousel",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "main_engine_accordion": {
+        "id": "W-17",
+        "src": "https://img.mobiscroll.com/demos/f2.png",
+        "name": "Main Engine Accordion",
+        "type": "main_engine_accordion",
+        "defaults": {
+            "h": 16.5,
+            "w": 10
+        }
+    },
+    "custom_gauge_with_spark_bar_and_label": {
+        "id": "W-18",
+        "src": "https://img.mobiscroll.com/demos/m1.png",
+        "name": "Custom Gauge With Spark Bar and Label",
+        "type": "custom_gauge_with_spark_bar_and_label",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "custom_bar_gauge": {
+        "id": "W-19",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Custom Bar Gauge",
+        "type": "custom_bar_gauge",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "custom_bar_gauge_list": {
+        "id": "W-20",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Custom Bar Gauge List",
+        "type": "custom_bar_gauge_list",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    },
+    "observant": {
+        "id": "W-21",
+        "src": "https://img.mobiscroll.com/demos/f1.png",
+        "name": "Observant",
+        "type": "observant",
+        "defaults": {
+            "h": 16.5,
+            "w": 1.5
+        }
+    }
+}

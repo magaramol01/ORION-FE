@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+   
+     
+    }
+    
+    table td, #table th {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+     
+    }
+    .rows{
+      margin-right: 3rem;
+    }
+    
+    table tr:nth-child(even){background-color: #f2f2f2;}
+    
+    table tr:hover {background-color: #ddd;}
+    
+    table th {
+      padding-top: 10px;
+      padding-bottom: 12px;
+      text-align: center;
+      
+      font-size: large;
+     color: black;
+    }
+   
+    .input{
+      width: 100vw;
+      height: 10vh;
+      border-radius: 1rem;
+    }
+  
+    .close:hover{
+      background-color: red;
+  
+    }
+    .modal-body{
+     
+    }
+    .table-bordered {
+      border: 1px solid #dee2e6;
+    }
+    .error-msg{
+      width: 100%;
+      color: red;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+  .pdf-container{
+    width:100%;
+    height: 80%;
+    background-color: #e4e4e4;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .actionButton{
+      cursor: pointer;
+  }

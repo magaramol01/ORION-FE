@@ -1,0 +1,96 @@
+{
+    "5ce5b9d2-a7f9-4ac7-8f9d-b0608fdbd6d5": {
+        "layout": {
+            "i": "5ce5b9d2-a7f9-4ac7-8f9d-b0608fdbd6d5",
+            "x": 0.5,
+            "y": 0,
+            "h": 42.4,
+            "w": 10.82,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 43,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Main Engine",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                }
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-10",
+            "src": "https://img.mobiscroll.com/demos/f2.png",
+            "name": "Cylinder",
+            "type": "main_engine_cylinder",
+            "defaults": {
+                "h": 43.7,
+                "w": 10.82
+            }
+        }
+    },
+    "a1ec6ff3-8a08-41d3-967a-2d82b51d845b": {
+        "layout": {
+            "i": "a1ec6ff3-8a08-41d3-967a-2d82b51d845b",
+            "x": 0.5,
+            "y": 41.1,
+            "h": 25.3,
+            "w": 10.82,
+            "minW": 0,
+            "minH": 0,
+            "maxW": 12,
+            "maxH": 26,
+            "static": true,
+            "isDraggable": false,
+            "isResizable": false
+        },
+        "configuration": {
+            "header": {
+                "text": "Main Engine",
+                "configuration": {
+                    "isShow": false,
+                    "fontSize": 14,
+                    "fontFamily": "Roboto, Helvetica Neue, Arial, sans-serif !important",
+                    "color": "#d8d9da",
+                    "backgroundColor": "#161719"
+                }
+            },
+            "body": {
+                "text": "",
+                "configuration": {
+
+                }
+            },
+            "panel": {
+                "isTransparent": false
+            }
+        },
+        "widgetDetails": {
+            "id": "W-17",
+            "src": "https://img.mobiscroll.com/demos/f2.png",
+            "name": "Main Engine Accordion",
+            "type": "main_engine_accordion",
+            "defaults": {
+                "h": 16.5,
+                "w": 10
+            }
+        }
+    }
+}

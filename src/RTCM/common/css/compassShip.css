@@ -1,0 +1,2451 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Simple reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #81C4D1;
+}
+
+.compass {
+    position: relative;
+    margin: 0 auto;
+}
+
+.compass-inner {
+    width: 603px;
+    height: 594px;
+    background-image: url(../images/compass.png);
+    position: relative;
+
+    top: 27.5px;
+
+}
+
+.main-arrow {
+    height: 100%;
+    width: 30px;
+    left: 155px;
+    position: relative;
+    padding-top: 5px;
+    box-sizing: border-box;
+    transform: rotate(20deg);
+    /* animation: spin 2.0s alternate infinite; */
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    /* -o-animation: spin 2.0s alternate infinite; */
+    -moz-transform: rotate(20deg);
+    /* -moz-animation: spin 2.0s alternate infinite; */
+    -webkit-transform: rotate(20deg);
+    /* -webkit-animation: spin 2.0s alternate infinite; */
+
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 165px solid #EF5052;
+    position: relative;
+}
+
+.arrow-down {
+    -webkit-transform: rotate(180deg); /* Safari and Chrome */
+    width: 0;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 165px solid #F3F3F3;
+    position: relative;
+}
+
+.north {
+    font-size: 36px;
+    font-family: 'Lobster Two', cursive;
+    color: #FFF;
+    position: absolute;
+    left: 155px;
+    top: 10px;
+}
+
+.east {
+    font-size: 36px;
+    font-family: 'Lobster Two', cursive;
+    color: #FFF;
+    position: absolute;
+    left: 290px;
+    top: 150px;
+}
+
+.west {
+    font-size: 36px;
+    font-family: 'Lobster Two', cursive;
+    color: #FFF;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+}
+
+.south {
+    font-size: 36px;
+    font-family: 'Lobster Two', cursive;
+    color: #FFF;
+    position: absolute;
+    left: 155px;
+    top: 280px;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1) rotate(80deg);
+    }
+    100% {
+        transform: scale(1) rotate(-180deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(80deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-180deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(80deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-180deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(80deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-180deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .compass {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .compass-inner {
+        width: 170px;
+        height: 170px;
+        left: 13px;
+        top: 13px;
+    }
+
+    .main-arrow {
+        width: 30px;
+        left: 78px;
+        width: 15px;
+        padding-top: 3px;
+    }
+
+    .arrow-up {
+        border-bottom: 82.5px solid #EF5052;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .arrow-down {
+        border-bottom: 82.5px solid #F3F3F3;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .north {
+        left: 78px;
+        top: 10px;
+        font-size: 16px;
+    }
+
+    .south {
+        font-size: 16px;
+        left: 78px;
+        top: 140px;
+    }
+
+    .east {
+        font-size: 16px;
+        top: 72.5px;
+        left: 145px;
+    }
+
+    .west {
+        font-size: 16px;
+        left: 10px;
+        top: 72.5px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .compass {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .compass-inner {
+        width: 170px;
+        height: 170px;
+        left: 13px;
+        top: 13px;
+    }
+
+    .main-arrow {
+        width: 30px;
+        left: 78px;
+        width: 15px;
+        padding-top: 3px;
+    }
+
+    .arrow-up {
+        border-bottom: 82.5px solid #EF5052;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .arrow-down {
+        border-bottom: 82.5px solid #F3F3F3;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .north {
+        left: 78px;
+        top: 10px;
+        font-size: 16px;
+    }
+
+    .south {
+        font-size: 16px;
+        left: 78px;
+        top: 140px;
+    }
+
+    .east {
+        font-size: 16px;
+        top: 72.5px;
+        left: 145px;
+    }
+
+    .west {
+        font-size: 16px;
+        left: 10px;
+        top: 72.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .compass {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .compass-inner {
+        width: 170px;
+        height: 170px;
+        left: 13px;
+        top: 13px;
+    }
+
+    .main-arrow {
+        width: 30px;
+        left: 78px;
+        width: 15px;
+        padding-top: 3px;
+    }
+
+    .arrow-up {
+        border-bottom: 82.5px solid #EF5052;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .arrow-down {
+        border-bottom: 82.5px solid #F3F3F3;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .north {
+        left: 78px;
+        top: 10px;
+        font-size: 16px;
+    }
+
+    .south {
+        font-size: 16px;
+        left: 78px;
+        top: 140px;
+    }
+
+    .east {
+        font-size: 16px;
+        top: 72.5px;
+        left: 145px;
+    }
+
+    .west {
+        font-size: 16px;
+        left: 10px;
+        top: 72.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .compass {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .compass-inner {
+        width: 170px;
+        height: 170px;
+        left: 13px;
+        top: 13px;
+    }
+
+    .main-arrow {
+        width: 30px;
+        left: 78px;
+        width: 15px;
+        padding-top: 3px;
+    }
+
+    .arrow-up {
+        border-bottom: 82.5px solid #EF5052;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .arrow-down {
+        border-bottom: 82.5px solid #F3F3F3;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+    }
+
+    .north {
+        left: 78px;
+        top: 10px;
+        font-size: 16px;
+    }
+
+    .south {
+        font-size: 16px;
+        left: 78px;
+        top: 140px;
+    }
+
+    .east {
+        font-size: 16px;
+        top: 72.5px;
+        left: 145px;
+    }
+
+    .west {
+        font-size: 16px;
+        left: 10px;
+        top: 72.5px;
+    }
+}
+
+
+/* Task :start-Date-03-12-2021
+Task No-11
+Developer Name-Yogesh chavan */
+.arrowImg {
+    background-color: orange; /* defines the background color of the image */
+    mask: url(../images/compassArrow.svg) no-repeat center / contain;
+    -webkit-mask: url(../images/compassArrow.svg) no-repeat center / contain;
+}
+
+#frame {
+    position: relative;
+    /*width: 497px;
+    height: 500px;*/
+    background-image: url(../images/compass.png);
+    /*    background-position: center;*/
+    background-size: cover;
+    background-size: 270px;
+    width: 270px;
+    background-repeat: no-repeat;
+    min-height: 270px;
+    margin-left: 32px;
+
+}
+
+#myImg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    width: 5% !important;
+    height: 27%;
+}
+
+.vessalLatLogDisplayBox {
+    height: 18px;
+    width: 83px;
+    position: absolute;
+    left: 10px;
+    top: 39px;
+    right: 0px;
+    bottom: 38px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    color: black;
+    text-align: start;
+    background-color: white;
+    text-align: center;
+    font-size: 10px;
+    text-align: start;
+}
+
+.sogstwDisplayBox {
+    width: 83px;
+    height: 18px;
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    position: absolute;
+    left: -42px;
+    top: 4px;
+    right: 50px;
+    bottom: 0px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    color: black;
+    text-align: start;
+    background-color: white;
+    font-size: 10px;
+}
+
+.North-East {
+    top: 100px;
+    right: 88px;
+}
+
+.North-West {
+    top: 100px;
+    left: 88px;
+}
+
+.West-South {
+    bottom: 8px;
+    left: 88px;
+}
+
+.South-East {
+    bottom: 345px !important;
+    right: 16px;
+}
+
+.main-arrow {
+    height: 100%;
+    width: 30px;
+    left: 155px;
+    position: relative;
+    padding-top: 5px;
+    box-sizing: border-box;
+    transform: rotate(20deg);
+    /* animation: spin 2.0s alternate infinite; */
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    /* -o-animation: spin 2.0s alternate infinite; */
+    -moz-transform: rotate(20deg);
+    /* -moz-animation: spin 2.0s alternate infinite; */
+    -webkit-transform: rotate(20deg);
+    /* -webkit-animation: spin 2.0s alternate infinite; */
+
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 165px solid #629b4b6e;
+    position: absolute;
+}
+
+.WindDirectiontriangle {
+    border-color: #629b4b6e #fff6ed05 #fff6ed05 #fff6ed05;
+    border-style: solid;
+    border-width: 70px 70px 70px 70px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    display: block;
+    margin: auto;
+    transform: rotateZ(
+            45deg);
+}
+
+.WindDirectiontriangle1 {
+    border-color: #629b4b6e #fff6ed05 #fff6ed05 #fff6ed05;
+    border-style: solid;
+    border-width: 130px 130px 130px 130px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 82px;
+    top: 131px;
+    display: block;
+    margin: auto;
+    transform: rotateZ(
+            45deg);
+}
+
+.VessalCourseDirectiontriangle {
+    border-color: #e757376e #fff6ed05 #fff6ed05 #fff6ed05;
+    border-style: solid;
+    border-width: 70px 70px 70px 70px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    display: block;
+    margin: auto;
+    transform: rotateZ(
+            45deg);
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 136px solid transparent;
+    border-right: 132px solid transparent;
+    border-top: 136px solid #629b4b6e;
+    position: absolute;
+    left: 119px;
+    top: 16px;
+    right: 24px;
+    bottom: 114px;
+    display: block;
+    margin: auto;
+    transform: rotateZ(
+            45deg);
+}
+
+.triangle-bottam {
+    width: 0;
+    height: 0;
+    border-left: 136px solid transparent;
+    border-right: 145px solid transparent;
+    border-top: 132px solid #e79b376e;
+    position: absolute;
+    left: 0px;
+    top: 183px;
+    right: 105px;
+    bottom: 106px;
+    display: block;
+    margin: auto;
+    transform: rotateZ(
+            -136deg);
+}
+
+#currentDirectionArrow {
+
+    position: absolute;
+    left: 12px;
+    top: 0px;
+    /* right: 0; */
+    bottom: 292px;
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+#windDirectionArrow {
+
+    position: absolute;
+    left: -32px;
+    top: 0px;
+    /* right: 0; */
+    bottom: 292px;
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+#arrow3 {
+    transform: rotate(
+            506.827deg);
+    position: absolute;
+    left: 0px;
+    top: 121px;
+    right: 284px;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+#arrow4 {
+    transform: rotate(
+            519.827deg);
+    position: absolute;
+    left: 0px;
+    top: 58px;
+    right: 316px;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+#arrow5 {
+    transform: rotate(
+            505.827deg);
+    position: absolute;
+    left: 248px;
+    top: 6px;
+    right: 7px;
+    bottom: 149px;
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+#arrow6 {
+    transform: rotate(
+            450.827deg);
+    position: absolute;
+    left: 142px;
+    top: 48px;
+    right: 7px;
+    bottom: 273px;
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+.VCD {
+    top: 409px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #539953;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    right: 457px;
+}
+
+.VCD1 {
+    top: 337px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #539953;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    right: 477px;
+}
+
+.VHDOuter {
+    top: 405px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: #b0f17b;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    left: 15px;
+}
+
+.VHDInner {
+
+
+    height: 45px;
+    width: 45px;
+    background-color: #3287e0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    color: #fff;
+    font-size: 9px;
+    line-height: 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.SwellOuter {
+    top: 0px;
+    position: absolute;
+    height: 50px;
+    width: 116px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 354px;
+    border: 1px solid black;
+}
+
+.SwellInner {
+    top: 4px;
+    position: absolute;
+    height: 41px;
+    width: 99px;
+    background-color: #7bd0f1;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    left: 362px;
+
+}
+
+.SwellInner p {
+    margin-bottom: 2px;
+    font-size: 12px !important;
+}
+
+.WaveOuter {
+    top: 0px;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 496px;
+    border: 1px solid black;
+}
+
+.WaveInner {
+    top: 5px;
+    position: absolute;
+    height: 40px;
+    width: 82px;
+    background-color: #89f17b;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    left: 505px;
+}
+
+.WaveInner p {
+    margin-bottom: 2px;
+    font-size: 12px !important;
+}
+
+.WindSpeed {
+    top: 371px;
+    position: absolute;
+    height: 43px;
+    width: 90px;
+    background-color: rgb(230, 213, 65);
+    text-align: center;
+    font-weight: bold;
+    left: 425px;
+    color: #28a745;
+    font-size: 12px;
+
+}
+
+.WindSpeed p {
+    margin-bottom: 1px;
+}
+
+.CurrecntSpeedInner p {
+    margin-bottom: 2px;
+    font-size: 12px !important;
+}
+
+.CurrecntSpeedOuter {
+    top: 425px;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(235, 180, 118);
+    text-align: center;
+    font-weight: bold;
+    left: 433px;
+    color: #0f0e0e;
+    font-size: 12px;
+
+}
+
+.CurrecntSpeedInner {
+    top: 429px;
+    position: absolute;
+    height: 41px;
+    width: 92px;
+    background-color: rgb(218, 23, 33);
+    text-align: center;
+    font-weight: bold;
+    left: 437px;
+    color: #28a745;
+    font-size: 9px;
+    line-height: 15px;
+
+}
+
+.LatLongNSEW {
+    top: 255px;
+    position: absolute;
+    height: 30px;
+    width: 117px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 224px;
+    border: 1px solid black;
+    transform: rotate(
+            -19deg);
+    color: #0f0e0e;
+}
+
+.SOGSTW {
+    top: 316px;
+    position: absolute;
+    height: 30px;
+    width: 117px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    left: 251px;
+    border: 1px solid black;
+    transform: rotate(
+            -19deg);
+    color: #0f0e0e;
+}
+
+.deactiveRow {
+    background-color: red !important;
+}
+
+.deactiveRow:hover {
+    background-color: red !important;
+}
+
+#currentDirectionArrow, #windDirectionArrow {
+    transform: rotate(
+            86deg)
+}
+
+.dot {
+    border: solid #e02222;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 15px;
+}
+
+/*------------------Current direction Arrow style-----------------------*/
+.iconCurrentDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowCurrentDirection {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -36px 62px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowCurrentDirection::after, .arrowCurrentDirection::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowCurrentDirectionDown::after {
+    border: none;
+    background-color: #fa080899;
+    height: 28%;
+    width: 8%;
+    top: 14px;
+    left: 11%;
+}
+
+.arrowCurrentDirectionDown::before {
+    left: 0;
+    top: 63%;
+    border-width: 6px 6px;
+    border-top-color: #fa080899;
+}
+
+.currentDirectionArrow {
+    /* border:1px solid black;*/
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 54px;
+    left: 67px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Wind direction Arrow style-----------------------*/
+.iconWindDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowWindDirection {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -36px 62px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowWindDirection::after, .arrowWindDirection::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowWindDirectionDown::after {
+    border: none;
+    background-color: #ffc10791;
+    height: 28%;
+    width: 8%;
+    top: 14px;
+    left: 11%;
+}
+
+.arrowWindDirectionDown::before {
+    left: 0;
+    top: 63%;
+    border-width: 6px 6px;
+    border-top-color: #ffc10791;
+}
+
+.WindArrow {
+    /* border:1px solid black;*/
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 54px;
+    left: 67px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+
+/*------------------Vessal Course direction Arrow style-----------------------*/
+.iconVCDirection {
+    position: absolute;
+    top: -34%;
+    left: 65%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            269deg);
+}
+
+.arrowVCDirection {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -36px 62px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowVCDirection::after, .arrowVCDirection::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowVCDirectionUp::after {
+    border: none;
+    background-color: #2bcd158c;
+    height: 28%;
+    width: 8%;
+    top: 20px;
+    left: 11%;
+
+}
+
+.arrowVCDirectionUp::before {
+    left: 0;
+    top: 20%;
+    border-width: 6px 6px;
+    border-bottom-color: #2bcd158c;
+}
+
+.VessalCourseArrow {
+    /* border:1px solid black;*/
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 54px;
+    left: 67px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+
+/*------------------Vessal Heading direction Arrow style-----------------------*/
+.iconVHDirection {
+    position: absolute;
+    top: -34%;
+    left: 65%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            269deg);
+}
+
+.arrowVHDirection {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -36px 62px;
+    transform: rotate(
+            0deg);
+
+}
+
+.arrowVHDirection::after, .arrowVHDirection::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowVHDirectionUp::after {
+    border: none;
+    background-color: #007bff8c;
+    height: 28%;
+    width: 8%;
+    top: 20px;
+    left: 11%;
+}
+
+.arrowVHDirectionUp::before {
+    left: 0;
+    top: 20%;
+    border-width: 6px 6px;
+    border-bottom-color: #007bff8c;
+}
+
+.VessalHeadingCourseArrow {
+    /* border:1px solid black;*/
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 54px;
+    left: 67px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Wave direction Arrow style-----------------------*/
+.iconWaveDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowWaveDirection {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -36px 62px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowWaveDirection::after, .arrowWaveDirection::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowWaveDirectionDown::after {
+    border: none;
+    background-color: #00bfff85;
+    height: 28%;
+    width: 8%;
+    top: 14px;
+    left: 11%;
+}
+
+.arrowWaveDirectionDown::before {
+    left: 0;
+    top: 63%;
+    border-width: 6px 6px;
+    border-top-color: #00bfff85;
+}
+
+.WaveArrow {
+    /* border:1px solid black;*/
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 54px;
+    left: 67px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Swell direction Arrow style-----------------------*/
+.iconSwellDirection {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowSwellDirection {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -36px 62px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowSwellDirection::after, .arrowSwellDirection::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowSwellDirectionDown::after {
+    border: none;
+    background-color: palegreen;
+    height: 28%;
+    width: 8%;
+    top: 14px;
+    left: 11%;
+}
+
+.arrowSwellDirectionDown::before {
+    left: 0;
+    top: 63%;
+    border-width: 6px 6px;
+    border-top-color: palegreen;
+}
+
+.SwellArrow {
+    /* border:1px solid black;*/
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 54px;
+    left: 67px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+/*-------------------------------------rectangle--------------------------------------*/
+.rectangleHeading {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.rectangleWind {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: rgb(230, 213, 65);
+    color: black;
+    text-align: center;
+}
+
+.rectangleSpeed {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.rectangleInnerSpeed {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: rgb(238, 194, 164);
+    color: black;
+    text-align: center;
+}
+
+.rectangleWave {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: deepskyblue;
+    color: black;
+    text-align: center;
+}
+
+.rectangleVH {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: mediumblue;
+    color: white;
+    text-align: center;
+}
+
+.rectangleVC {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: #2bcd15;
+    color: black;
+    text-align: center;
+}
+
+.rectangleSwell {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: palegreen;
+    color: black;
+    text-align: center;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+.mt16 {
+    margin-top: 16px;
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+.arrowNew {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -66px 81px;
+    transform: rotate(
+            1deg);
+}
+
+.arrowNew:before, .arrowNew:after {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrow-downNew:before {
+    border: none;
+    background-color: #e21111;
+    height: 50%;
+    width: 30%;
+    top: 0;
+    left: 35%;
+}
+
+.arrow-downNew:after {
+    left: 0;
+    top: 50%;
+    border-width: 20px 20px;
+    border-top-color: #de1919;
+}
+
+.topping {
+    margin-top: 0.3rem;
+    vertical-align: text-bottom;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.forRedTirangle {
+    color: red !important;
+  
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+    FONT-SIZE: 18PX !important;
+}
+
+.forGreenTirangle {
+    color: green !important;
+    
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+    FONT-SIZE: 18PX;
+}
+
+.forWhiteTirangle {
+    color: white !important;
+    
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+    FONT-SIZE: 18PX;
+}
+
+.compassLebelSpan {
+   
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+    FONT-SIZE: 11PX;
+}
+
+.compassLebelSpanForFullScreen {
+    margin-left: 6px;
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+    FONT-SIZE: 14PX;
+    color: #fff;
+}
+
+.compassLebelHeightSpan {
+    margin-left: 15px;
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+}
+.compassLebelHeightSpanForFullScreen  {
+   
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif !important;
+    FONT-SIZE: 14PX;
+    color: #fff;
+}
+.mrl0{
+    margin-left: 0px !important;
+
+}
+.sogLine {
+    border-top: 1px solid #fff !important;
+    border-width: 1px !important;
+    text-align: center;
+    font-size: 11px !important;
+}
+.sogLineForFullScree {
+    border-top: 1px solid #fff !important;
+    border-width: 1px !important;
+    text-align: center;
+    font-size: 14px !important;
+   
+}
+.center {
+    text-align: center;
+    color: #fff;
+}
+.font18{
+    font-size: 18px !important;
+}
+.font12{
+    font-size: 12px !important;
+}
+.unitStyle{
+    color: gray;
+}
+/*-------------------------Check box Style-----------------------------*/
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: -2px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.compassLebel {
+    font-size: 11px !important;
+    margin-bottom: unset !important;
+    margin-left: 5px;
+}
+
+/*-------------------------------End-----------------------------------*/
+.triangleRed {
+    width: 100px;
+    height: 100px;
+    float: left;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    border: 2px solid rgba(255, 0, 0, 0.24);
+    color: white;
+    border-top: none;
+    border-left: none;
+    transform-origin: bottom right;
+    top: 36px;
+    left: 36px;
+    position: absolute;
+
+}
+
+.triangleGreen {
+    width: 100px;
+    height: 100px;
+    float: left;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    border: 2px solid rgba(40, 167, 69, 0.31);
+    color: white;
+    border-top: none;
+    border-left: none;
+    transform-origin: bottom right;
+    top: 36px;
+    left: 36px;
+    position: absolute;
+}
+
+.latLongStyle {
+    font-size: 11px;
+    width: 35%;
+}
+
+.stw-sog {
+    margin-left: 234px;
+    margin-top: -34px;
+}
+
+.stw-sog-text {
+    margin-left: 213px;
+    font-size: 10px;
+}
+
+
+/*-----------------------------------------Compass css for full screen-----------------------------*/
+
+#frameForFullScreen {
+    position: relative;
+    /*width: 497px;
+    height: 500px;*/
+    background-image: url(../images/compass.png);
+    /*    background-position: center;*/
+    background-size: cover;
+    background-size: 338px;
+    width: 338px;
+    background-repeat: no-repeat;
+    min-height: 338px;
+    margin-left: 32px;
+
+}
+
+#myImgForFullScreen {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    width: 5% !important;
+    height: 27%;
+}
+
+.triangleRedForFullScreen {
+    width: 160px;
+    height: 160px;
+    float: left;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    border: 2px solid rgba(255, 0, 0, 0.24);
+    color: white;
+    border-top: none;
+    border-left: none;
+    transform-origin: bottom right;
+    top: 10px;
+    left: 9px;
+    position: absolute;
+
+}
+
+.triangleGreenForFullScreen {
+    width: 160px;
+    height: 160px;
+    float: left;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    border: 2px solid rgba(40, 167, 69, 0.31);
+    color: white;
+    border-top: none;
+    border-left: none;
+    transform-origin: bottom right;
+    top: 10px;
+    left: 9px;
+    position: absolute;
+}
+
+/*------------------Current direction Arrow style-----------------------*/
+.iconCurrentDirectionForFullScreen {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowCurrentDirectionForFullScreen {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    margin: -47px 86px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowCurrentDirectionForFullScreen::after, .arrowCurrentDirectionForFullScreen::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowCurrentDirectionDownForFullScreen::after {
+    border: none;
+    background-color: #fa080899;
+    height: 31%;
+    width: 10%;
+    top: 14px;
+    left: 10%;
+}
+
+.arrowCurrentDirectionDownForFullScreen::before {
+    left: 0;
+    top: 53%;
+    border-width: 9px 9px;
+    border-top-color: #fa080899;
+}
+
+.currentDirectionArrowForFullScreen {
+    /* border:1px solid black;*/
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 74px;
+    left: 74px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Wind direction Arrow style-----------------------*/
+.iconWindDirectionForFullScreen {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowWindDirectionForFullScreen {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    margin: -47px 86px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowWindDirectionForFullScreen::after, .arrowWindDirectionForFullScreen::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowWindDirectionDownForFullScreen::after {
+    border: none;
+    background-color: #ffc10791;
+    height: 31%;
+    width: 10%;
+    top: 14px;
+    left: 10%;
+}
+
+.arrowWindDirectionDownForFullScreen::before {
+    left: 0;
+    top: 53%;
+    border-width: 9px 9px;
+    border-top-color: #ffc10791;
+}
+
+.WindArrowForFullScreen {
+    /* border:1px solid black;*/
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 74px;
+    left: 74px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+
+/*------------------Vessal Course direction Arrow style-----------------------*/
+.iconVCDirectionForFullScreen {
+    position: absolute;
+    top: -34%;
+    left: 65%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            269deg);
+}
+
+.arrowVCDirectionForFullScreen {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin:-47px 86px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowVCDirectionForFullScreen::after, .arrowVCDirectionForFullScreen::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowVCDirectionUpForFullScreen::after {
+    border: none;
+    background-color: #2bcd158c;
+    height: 41%;
+    width: 14%;
+    top: 18px;
+    left: 14%;
+
+}
+
+.arrowVCDirectionUpForFullScreen::before {
+    left: 0;
+    top: 0%;
+    border-width: 9px 9px;
+    border-bottom-color: #2bcd158c;
+}
+
+.VessalCourseArrowForFullScreen {
+    /* border:1px solid black;*/
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 79px;
+    left: 74px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+
+/*------------------Vessal Heading direction Arrow style-----------------------*/
+.iconVHDirectionForFullScreen {
+    position: absolute;
+    top: -34%;
+    left: 65%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            269deg);
+}
+
+.arrowVHDirectionForFullScreen {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    margin: -47px 86px;
+    transform: rotate(
+            0deg);
+
+}
+
+.arrowVHDirectionForFullScreen::after, .arrowVHDirectionForFullScreen::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowVHDirectionUpForFullScreen::after {
+    border: none;
+    background-color: #007bff8c;
+    height: 41%;
+    width: 15%;
+    top: 18px;
+    left: 17%;
+}
+
+.arrowVHDirectionUpForFullScreen::before {
+    left: 0;
+    top: 0%;
+    border-width: 9px 9px;
+    border-bottom-color: #007bff8c;
+}
+
+.VessalHeadingCourseArrowForFullScreen {
+    /* border:1px solid black;*/
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 79px;
+    left: 74px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Wave direction Arrow style-----------------------*/
+.iconWaveDirectionForFullScreen {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowWaveDirectionForFullScreen {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    margin: -47px 86px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowWaveDirectionForFullScreen::after, .arrowWaveDirectionForFullScreen::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowWaveDirectionDownForFullScreen::after {
+    border: none;
+    background-color: #00bfff85;
+    height: 31%;
+    width: 10%;
+    top: 14px;
+    left: 10%;
+}
+
+.arrowWaveDirectionDownForFullScreen::before {
+    left: 0;
+    top: 53%;
+    border-width: 9px 9px;
+    border-top-color: #00bfff85;
+}
+
+.WaveArrowForFullScreen {
+    /* border:1px solid black;*/
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 74px;
+    left: 74px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+
+/*------------------Swell direction Arrow style-----------------------*/
+.iconSwellDirectionForFullScreen {
+    position: absolute;
+    top: -28%;
+    left: -7%;
+    /* transform: translate(-50%,-50%);*/
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(
+            89deg);
+}
+
+.arrowSwellDirectionForFullScreen {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    margin: -47px 86px;
+    transform: rotate(
+            0deg);
+}
+
+.arrowSwellDirectionForFullScreen::after, .arrowSwellDirectionForFullScreen::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.arrowSwellDirectionDownForFullScreen::after {
+    border: none;
+    background-color: palegreen;
+    height: 31%;
+    width: 10%;
+    top: 14px;
+    left: 10%;
+}
+
+.arrowSwellDirectionDownForFullScreen::before {
+    left: 0;
+    top: 53%;
+    border-width: 9px 9px;
+    border-top-color: palegreen;
+}
+
+.SwellArrowForFullScreen {
+    /* border:1px solid black;*/
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+    -moz-animation-duration: 5s;
+    top: 74px;
+    left: 74px;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+/* ----------------End Task -----------------------------------------------------*/
+/*-------------------------------------rectangle--------------------------------------*/
+.rectangleHeadingForFullScreen {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.rectangleWindForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: rgb(230, 213, 65);
+    color: black;
+    text-align: center;
+}
+
+.rectangleSpeedForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.rectangleInnerSpeedForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: rgb(238, 194, 164);
+    color: black;
+    text-align: center;
+}
+
+.rectangleWaveForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: deepskyblue;
+    color: black;
+    text-align: center;
+}
+
+.rectangleVHForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: mediumblue;
+    color: white;
+    text-align: center;
+}
+
+.rectangleVCForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: #2bcd15;
+    color: black;
+    text-align: center;
+}
+
+.rectangleSwellForFullScreen {
+    height: 56px;
+    font-size: 8px;
+    width: 108px;
+    background-color: palegreen;
+    color: black;
+    text-align: center;
+}
+
+.Font12 {
+    font-size: 14px !important;
+}
+
+.compassWindLabelIcons {
+    font-size: 24px;
+    color: #ffc107 !important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.compassCurrentLabelIcons{
+    font-size: 24px;
+    color: #fa0808 !important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.compassWaveLabelIcons{
+    font-size: 24px;
+    color:#00bfff !important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.compassSwellLabelIcons {
+    font-size: 24px;
+    color: palegreen!important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.compassVHDLabelIcons {
+    font-size: 24px;
+    color: #007bff!important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.compassVCDLabelIcons {
+    font-size: 24px;
+    color:#2bcd15!important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.windyCompass #bottom {
+    display:none !important;
+}
+.btn-check{
+    display: none;
+}
+.mt28{
+    margin-top: 28px;
+}
+.btnTypeVovage:hover{
+    color: white ;
+}
+.btnTypeVovage{
+    width: 60px !important;
+    background-color: #212124 !important;
+    border-color: white !important;
+    color: white ;
+}
+.btnTypeVovageSelected{
+    background-color: white !important;
+    border-color: #212124 !important;
+    color: #212124 !important;
+}
+.btnTypeVovageSelected:hover{
+    color: #212124  !important;
+}
+.btnTypeVovageByDt:hover{
+    color: white !important;
+}
+.btnTypeVovageByDt{
+    width: 99px ;
+    background-color: #212124 ;
+    border-color: white ;
+    color: white ;
+}
+
+.mt4{
+    margin-top: 4px;
+}
+.divVoyageList {
+    margin: 4px, 4px;
+    padding:0px;
+    background-color: transparent;
+    width: 397px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+/* .divVoyageList ::-webkit-scrollbar 
+{
+    width: 5px !important;
+    height: 8px !important;
+    background-color: #aaa !important; 
+} */
+.divVoyageList::-webkit-scrollbar {
+    background: transparent;
+    width: var(--scrollbar-width-height);
+    height: 5px;
+  }
+  
+  .divVoyageList::-webkit-scrollbar-thumb {
+    background: #9d9ba0;
+  }
+  
+  .divVoyageList::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  .divVoyageList[style*="17px"] {
+    right: var(--scrollbar-width-height) !important;
+    bottom: var(--scrollbar-width-height) !important;
+  }
+  
+/*-------------------------------------------------End----------------------------------------------*/
